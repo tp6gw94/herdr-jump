@@ -1,6 +1,6 @@
 id = "herdr.jump"
 name = "Herdr Jump"
-version = "0.1.1"
+version = "0.1.2"
 min_herdr_version = "0.8.0"
 description = "Jump to Herdr workspaces, tabs, panes, and agents"
 platforms = ["linux", "macos", "windows"]
@@ -8,6 +8,26 @@ platforms = ["linux", "macos", "windows"]
 [[actions]]
 id = "jump"
 title = "Jump"
+command = ["node", "src/action.js"]
+
+[[actions]]
+id = "workspace"
+title = "Workspace"
+command = ["node", "src/action.js"]
+
+[[actions]]
+id = "tab"
+title = "Tab"
+command = ["node", "src/action.js"]
+
+[[actions]]
+id = "pane"
+title = "Pane"
+command = ["node", "src/action.js"]
+
+[[actions]]
+id = "agent"
+title = "Agent"
 command = ["node", "src/action.js"]
 
 [[panes]]

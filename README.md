@@ -54,6 +54,30 @@ key = "prefix+alt+j"
 type = "plugin_action"
 command = "herdr.jump.jump"
 description = "Herdr Jump"
+
+[[keys.command]]
+key = "prefix+alt+w"
+type = "plugin_action"
+command = "herdr.jump.workspace"
+description = "Herdr Workspace"
+
+[[keys.command]]
+key = "prefix+alt+t"
+type = "plugin_action"
+command = "herdr.jump.tab"
+description = "Herdr Tab"
+
+[[keys.command]]
+key = "prefix+alt+p"
+type = "plugin_action"
+command = "herdr.jump.pane"
+description = "Herdr Pane"
+
+[[keys.command]]
+key = "prefix+alt+a"
+type = "plugin_action"
+command = "herdr.jump.agent"
+description = "Herdr Agent"
 ```
 
 Reload Herdr:
@@ -62,7 +86,7 @@ Reload Herdr:
 herdr server reload-config
 ```
 
-With the default `ctrl+b` prefix, press `Ctrl+B`, then `Alt+J`.
+With the default `ctrl+b` prefix, press `Ctrl+B`, then `Alt+J`, `Alt+W`, `Alt+T`, `Alt+P`, or `Alt+A`.
 
 ## Development
 
