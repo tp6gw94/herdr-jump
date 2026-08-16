@@ -1,0 +1,38 @@
+id = "herdr.jump"
+name = "Herdr Jump"
+version = "0.1.0"
+min_herdr_version = "0.8.0"
+description = "Jump to Herdr workspaces, tabs, panes, and agents"
+platforms = ["linux", "macos", "windows"]
+
+[[panes]]
+id = "jump"
+title = "Jump"
+placement = "popup"
+height = "100%"
+command = ["node", "src/picker.js", "all"]
+
+[[panes]]
+id = "workspace"
+title = "Workspace"
+placement = "popup"
+command = ["node", "src/picker.js", "workspace"]
+
+[[panes]]
+id = "tab"
+title = "Tab"
+placement = "popup"
+command = ["node", "src/picker.js", "tab"]
+
+[[panes]]
+id = "pane"
+title = "Pane"
+placement = "popup"
+command = ["node", "src/picker.js", "pane"]
+
+[[panes]]
+id = "agent"
+title = "Agent"
+placement = "popup"
+command = ["node", "src/picker.js", "agent"]
+
