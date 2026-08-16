@@ -1,10 +1,10 @@
 {
   "name": "herdr-jump",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "check": "node --check src/picker.js"
+    "check": "node --check src/picker.js && node --check src/action.js"
   }
 }

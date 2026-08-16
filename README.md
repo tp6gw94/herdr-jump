@@ -51,8 +51,8 @@ Add this to `~/.config/herdr/config.toml`:
 ```toml
 [[keys.command]]
 key = "prefix+alt+j"
-type = "shell"
-command = "\"$HERDR_BIN_PATH\" plugin pane open --plugin herdr.jump --entrypoint jump"
+type = "plugin_action"
+command = "herdr.jump.jump"
 description = "Herdr Jump"
 ```
 
@@ -62,7 +62,7 @@ Reload Herdr:
 herdr server reload-config
 ```
 
-With the default `ctrl+b` prefix, press `Ctrl+B`, then `Alt+J`. Use a different `entrypoint` (`workspace`, `tab`, `pane`, or `agent`) and key when binding a focused picker.
+With the default `ctrl+b` prefix, press `Ctrl+B`, then `Alt+J`.
 
 ## Development
 
