@@ -2,6 +2,9 @@
 
 Keyboard navigation for Herdr workspaces, tabs, panes, and agents.
 
+
+![demo](assets/demo.gif)
+
 ## Requirements
 
 - Herdr 0.8.0+
