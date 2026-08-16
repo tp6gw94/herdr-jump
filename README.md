@@ -73,3 +73,7 @@ herdr plugin link .
 ```
 
 The plugin uses no npm dependencies.
+
+## License
+
+[MIT](LICENSE)
