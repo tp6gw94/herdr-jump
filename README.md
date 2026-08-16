@@ -44,6 +44,26 @@ Type the red label beside a target. When a label matches multiple targets, type 
 
 Agent rows include compact status icons: working `󰔟`, idle `󰏤`, blocked `󰌾`, done `󰄬`, and unknown `󰋗`.
 
+## Keyboard shortcut
+
+Add this to `~/.config/herdr/config.toml`:
+
+```toml
+[[keys.command]]
+key = "prefix+alt+j"
+type = "shell"
+command = "\"$HERDR_BIN_PATH\" plugin pane open --plugin herdr.jump --entrypoint jump"
+description = "Herdr Jump"
+```
+
+Reload Herdr:
+
+```sh
+herdr server reload-config
+```
+
+With the default `ctrl+b` prefix, press `Ctrl+B`, then `Alt+J`. Use a different `entrypoint` (`workspace`, `tab`, `pane`, or `agent`) and key when binding a focused picker.
+
 ## Development
 
 ```sh
